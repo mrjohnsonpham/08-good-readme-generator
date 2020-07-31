@@ -1,7 +1,7 @@
 // npm packages that you need to install
 let inquirer = require("inquirer");
 let fs = require("fs");
-const generateMarkdown = require('./utils/generatemarkdown.');
+const {generateMarkdown} = require('./utils/generatemarkdown');
 
 // array of questions for users 
 const questions = [
@@ -12,7 +12,7 @@ const questions = [
 inquirer.prompt([
     {
         type: "input",
-        name: "github username",
+        name: "username",
         message: "Please enter your github username:"
     },
 {
@@ -31,7 +31,7 @@ inquirer.prompt([
 },
 {
     type: "input",
-    name: "project description",
+    name: "description",
     message: "Please provide a detail description of the project",
          validate: description => {
                 if(description.length < 10){
@@ -73,7 +73,7 @@ inquirer.prompt([
 },
 {
     type: "checkbox",
-    name: "License",
+    name: "license",
     message: "Which License(s) are you using?",
     choices: [
         "MIT License",
@@ -113,6 +113,8 @@ inquirer.prompt([
 },
 ]).then(responseObj => {
     // console.log(responseObj);     // this is to check if your object array is brought back
+    console.log("Response: ")
+    console.log(responseObj)
     const finishedMarkdown = generateMarkdown(responseObj);
 
     fs.writeFile('./profile.md', finishedMarkdown, err =>{ 

@@ -1,5 +1,5 @@
 
-const generateMarkdown = Response => {
+const generateMarkdown = response => {
     return ` 
     # Tables of Contents
 * [Github Username](#github-username)
@@ -14,32 +14,34 @@ const generateMarkdown = Response => {
 * [Badge](#badge)
 
 ##Github Username
-${data.github-username}
+${response.username}
 ##Title
-${data.title}
+${response.title}
 ##Projection Description
-${data.project-description}
+${response.description}
 ##Installation
-${data.installation}
+${response.installation}
 ##Usage
-${data.usage}
+${response.usage}
 ##License
-${data.license}
+${response.license}
 ##Authors
-${data.author}
+${response.author}
 ##Contributors
-${data.contributors}
+${response.contributors}
 ##Badge
-${data.badge}
+${response.badge}
+`};
 
-# Questions
-![Profile Avatar](${data.pfp})
-If you have any questions, please e-mail me at ${data.email}.
-# Credits
-Github: [${data.username}](${data.url})
-Copyright ${data.name}. All Rights Reserved.
-`;
-};
+
+// # Questions
+// ![Profile Avatar](${data.pfp})
+// If you have any questions, please e-mail me at ${data.email}.
+// # Credits
+// Github: [${data.username}](${data.url})
+// Copyright ${data.name}. All Rights Reserved.
+// `;
+
     
 
 
