@@ -1,4 +1,8 @@
 
+
+
+// function to generate markdown 
+
 const generateMarkdown = response => {
     return ` 
     # Tables of Contents
@@ -14,22 +18,31 @@ const generateMarkdown = response => {
 * [Badge](#badge)
 
 ##Github Username
-${response.username}
+![GitHub](https://img.shields.io/github/license/${response.username}/${response.repo})
+
 ##Title
 ${response.title}
+
 ##Projection Description
 ${response.description}
+
 ##Installation
 ${response.installation}
+
 ##Usage
 ${response.usage}
+
 ##License
 ${response.license}
+
 ##Authors
-${response.author}
+${response.authors}
+
 ##Contributors
 ${response.contributors}
+
 ##Badge
+
 ${response.badge}
 `};
 

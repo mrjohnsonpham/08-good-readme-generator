@@ -82,6 +82,11 @@ inquirer.prompt([
         "Microsoft Public",
         "None",
 ]},
+{
+    type: "input",
+    name: "badge",
+    message: "Insert Badge Code"
+},
 {   type: "input",
     name: "authors",
     message: "Name of Author",
@@ -106,18 +111,14 @@ inquirer.prompt([
     name: "tests",
     message: "Provide examples on how to run tests."
 },
-{
-    type: "input",
-    name: "badge",
-    message: "Insert Badge Code"
-},
+
 ]).then(responseObj => {
     // console.log(responseObj);     // this is to check if your object array is brought back
     console.log("Response: ")
     console.log(responseObj)
     const finishedMarkdown = generateMarkdown(responseObj);
 
-    fs.writeFile('./profile.md', finishedMarkdown, err =>{ 
+    fs.writeFile('./profile.md',  finishedMarkdown, err =>{ 
         if (err){
             console.log(err)
         } else {
