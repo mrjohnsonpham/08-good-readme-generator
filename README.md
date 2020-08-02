@@ -69,7 +69,7 @@ https://drive.google.com/file/d/1dbAv2Tl9N7bIAk72j8YG-gKxkX1f5uLM/view?usp=shari
 ## Questions 
  You can see more of my Projects on my [GitHub profile](https://github.com/mrjohnsonpham) 
 
- Contact [sbolotnikov](mailto:mrjohnsonpham@gmail.com) 
+ Contact [mrjohnsonpham](mailto:mrjohnsonpham@gmail.com) 
  
 ## Review 
 
