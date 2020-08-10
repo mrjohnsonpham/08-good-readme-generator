@@ -51,7 +51,7 @@ https://drive.google.com/file/d/1dbAv2Tl9N7bIAk72j8YG-gKxkX1f5uLM/view?usp=shari
 
  
 
-![readme-project](./assets/images/gif1.gif) 
+![readme-project](./asssts/demo-images-and-videos/gif1.gif) 
 
 
 
